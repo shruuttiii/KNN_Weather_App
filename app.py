@@ -27,11 +27,11 @@ st.write(f"Predicted Weather: **{label_map[prediction]}**")
 
 fig, ax = plt.subplots()
 
-ax.scatter(X[y==0, 0], X[y==0, 1], color='orange', label='Sunny', s=100, edgecolor='k')
-ax.scatter(X[y==1, 0], X[y==1, 1], color='blue', label='Rainy', s=100, edgecolor='k')
+ax.scatter(X[y==0, 0], X[y==0, 1], color='yellow', label='Sunny', s=100, edgecolor='k')
+ax.scatter(X[y==1, 0], X[y==1, 1], color='lightblue', label='Rainy', s=100, edgecolor='k')
 
 ax.scatter(temp, hum,
-           color='red' if prediction == 1 else 'orange',
+           color='lightgray' if prediction == 1 else 'orange',
            marker='*',
            s=300,
            edgecolor='black',
